@@ -1,0 +1,62 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+h2{
+  font-size: 28px;
+}
+
+input{
+  display: list-item;
+  min-height: 20px;
+  min-width: 100px;
+  max-width: 300px;
+  margin: 8px 3px;
+  border: none;
+  outline: 2px black solid;
+  border-radius: 6px;
+}
+
+label{
+  margin: 16px 4px;
+  display: table;
+}
+
+textarea{
+  display: list-item;
+  border: none;
+  outline: 2px black solid;
+}
+
+.checkbox{
+  min-height: 16px;
+  min-width: 16px;
+  display: inline-block;
+  outline: none;
+}
+
+fieldset{
+  max-width: 336px;
+  min-height: 600px;
+  border-radius: 8px;
+  border: black 3px solid;
+}
+
+marker{
+  display: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+
+}
+
+.textarea{
+  min-height: 50px;
+  max-height: 150px;
+  min-width: 296px;
+  resize: vertical;
+  border-radius: 5px;
+}
