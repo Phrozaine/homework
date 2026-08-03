@@ -1,0 +1,83 @@
+html {
+    font-family: Ubuntu;
+    font-weight: 400;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.article-head{
+    max-width: 596px;
+    margin-bottom: 40px;
+    font-family: Oswald;
+    padding-top: 80px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+}
+
+.title-mb{
+    margin-bottom: 40px;
+}
+
+.article-text{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article-text-mb{
+    margin-bottom: 80px;
+}
+
+.gym-img, .article-video{
+    max-width: 100%;
+}
+
+.article-head2{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+}
+
+.group{
+    max-width: 744px;
+    margin-bottom: 20px;
+}
+
+.list{
+    padding-left: 16px;
+    margin-left: 0px;
+}
+
+.end-article{
+    margin-bottom: 120px;
+}
+
+.anchor-fit{
+    color: #3596ED;
+    text-decoration: none;;
+}
