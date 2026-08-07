@@ -1,0 +1,27 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid #d3cbd9;
+}
+
+.phone-box {
+  text-align: right;
+}
+
+.phone {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+}
+
+.phone-box p {
+  margin: 0px 0px;
+  margin-bottom: 8px;
+}
+
+.phone-box a {
+  text-decoration: none;
+}
