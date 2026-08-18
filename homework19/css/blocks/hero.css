@@ -1,0 +1,156 @@
+.hero {
+  position: relative;
+}
+
+@media (width > 576px) {
+  .hero {
+    padding-bottom: 94px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* min-height: clamp(27.063rem, 13.823 + 56.49vw, 768px); */
+  min-height: clamp(433px, 13.823rem + 56.49vw, 742px);
+}
+
+@media (width > 768px) {
+  .hero__container {
+    padding-top: 60px;
+  }
+}
+
+@media (width <=768px) and (width > 576px) {
+  .hero__container {
+    padding-top: 20px;
+  }
+}
+
+.hero__header {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@media (width > 768px) {
+  .hero__header {
+    align-items: center;
+  }
+}
+
+@media (width <=768px) {
+  .hero__header {
+    flex-direction: column;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 88px;
+  z-index: var(--layer-negative);
+}
+
+.hero__title {
+  display: flex;
+  gap: clamp(8px, 0.09rem + 1.75vw, 35px);
+  font-weight: 600;
+  font-size: clamp(48px, 1.786rem + 5.18vw, 128px);
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+@media (width <=768px) {
+  .hero__title {
+    align-self: center;
+  }
+}
+
+.hero__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (width > 768px) {
+  .hero__benefits {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.benefits__list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c9c69b;
+}
+
+@media (width > 768px) {
+  .benefits__list {
+    font-size: 16px;
+  }
+}
+
+@media (width <= 768px) {
+  .benefits__list {
+    font-size: 14px;
+  }
+}
+
+.hero__footer {
+  text-align: end;
+  padding-bottom: 20px;
+}
+
+.hero__footer-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  gap: 15px;
+  transition: color var(--transition-time);
+}
+
+.arrow {
+  stroke: currentcolor;
+}
+
+@media (any-hover: hover) {
+  .hero__footer-link:hover {
+    color: var(--accent-color);
+  }
+}
+
+.hero__title-accent {
+  -webkit-text-stroke: 3px var(--accent-color);
+  color: transparent;
+}
+
+@media (width > 768px) {
+  .hero__title-accent {
+    -webkit-text-stroke: 3px var(--accent-color);
+  }
+}
+
+@media (width <= 768px) {
+  .hero__title-accent {
+    -webkit-text-stroke: 1.5px var(--accent-color);
+  }
+}
