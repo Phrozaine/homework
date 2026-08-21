@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="arrow" width="14" height="26" viewBox="0 0 14 26" fill="none">
+      <g clip-path="url(#clip0_1_54)">
+        <path d="M13 25L1 13L13 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_54">
+          <rect width="14" height="26" fill="white" />
+        </clipPath>
+      </defs>
+    </symbol>
+<symbol id="pictures" width="1294" height="70" viewBox="0 0 1294 70" fill="none">
+  <path d="M550 34H744V36H550V34Z" fill="black" />
+  <path d="M778 34H972V36H778V34Z" fill="black" />
+  <path d="M322 34H516V36H322V34Z" fill="black" />
+</symbol>
+</svg>

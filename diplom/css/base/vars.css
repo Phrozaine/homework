@@ -1,0 +1,31 @@
+:root {
+  /* font-family */
+  --font-family: "Inter", sans-serif;
+
+  /* colors */
+  --main-color: #000;
+  --accent-color: #68bdfd;
+  --bg-color: #fff;
+  --second-bg-color: #dce5e2;
+  --third-bg-color: #f8f9fa;
+  --shadow-color: #00000040;
+  --border-color: #c5c5c5;
+
+  /* shadows */
+  --shadow-glow: 0 4px 35px 0 var(--shadow-color);
+
+  /* container */
+  --container-width: 1294px;
+  --container-padding: 28px;
+
+  /* transition */
+
+  --transition-time: 0.2s;
+
+  /* layers */
+
+  --layer-negative: -1;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

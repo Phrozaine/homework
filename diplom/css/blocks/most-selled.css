@@ -1,0 +1,55 @@
+.most-selled__footer {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.most-selled__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 125%;
+  color: #000;
+  padding-bottom: 9px;
+}
+
+.most-selled__article {
+  max-width: 303px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .most-selled__article:hover {
+    transform: scale(1.02);
+  }
+}
+
+.most-selled__info {
+  margin-top: 9px;
+  margin-right: 0;
+}
+
+.most-selled__descritption {
+  font-weight: 400;
+  max-width: 261px;
+  font-size: 14px;
+  line-height: 120%;
+  color: #4b4b4b;
+  padding-bottom: 25px;
+}
+
+.most-selled__price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #000;
+  margin-top: auto;
+}
+
+.most-selled__img {
+  padding: 28px;
+  padding-top: 0px;
+}

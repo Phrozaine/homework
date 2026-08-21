@@ -1,0 +1,112 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.page__body {
+  min-width: 375px;
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+.text-regular {
+  font-family: "ReadexPro";
+  font-weight: 400;
+  font-size: clamp(10px, 0.564rem + 0.26vw, 14px);
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+.text-medium,
+.footer-text {
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 128%;
+  color: var(--main-color);
+}
+
+.text-medium {
+  font-size: clamp(10px, 0.549rem + 0.32vw, 15px);
+}
+
+.footer-text {
+  font-size: 17px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.title-mini,
+.title-small,
+.title-medium,
+.title-large {
+  font-family: "ReadexPro";
+  font-weight: 400;
+  color: var(--main-color);
+  margin: 0px;
+}
+
+.title-mini {
+  font-size: clamp(17px, 0.987rem + 0.32vw, 22px);
+}
+
+.title-large {
+  font-size: clamp(35px, 1.839rem + 1.49vw, 58px);
+}
+
+.title-medium {
+  font-size: clamp(24px, 1.227rem + 1.17vw, 42px);
+}
+
+.title-small {
+  font-size: clamp(20px, 1.068rem + 0.78vw, 32px);
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 31px;
+}
+
+.section__title {
+  padding-bottom: 9px;
+  text-align: center;
+}
+
+.section__text {
+  max-width: 628px;
+  text-align: center;
+}
+
+@media (width > 576px) {
+  .section {
+    padding-bottom: 72px;
+  }
+}
+
+@media (width <= 786px) {
+  .section {
+    padding-bottom: 53px;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
