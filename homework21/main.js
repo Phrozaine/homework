@@ -11,7 +11,7 @@ switch (task) {
     }
 
     alert(number);
-    brake;
+    break;
   case 2:
     let age = prompt("Ваш возраст:");
 
@@ -23,14 +23,14 @@ switch (task) {
       age = "Ваша скидка 30%";
     }
     alert(age);
-    brake;
+    break;
   case 3:
     var login = prompt("Логин");
     var password = prompt("Пароль");
 
     if (
-      (login = "admin" && password == 123456) ||
-      (login = "user" && password == 123456)
+      (login == "admin" && password == 123456) ||
+      (login == "user" && password == 123456)
     ) {
       alert("Доступ разрешен.");
     } else {
@@ -45,23 +45,32 @@ switch (task) {
     if (weight <= 0) {
       cost = 0;
     } else if (weight < 1) {
-      cost = 1;
+      cost = 5;
     } else if (weight <= 5 && weight < 10) {
       cost = 10;
     } else {
       cost = 15;
     }
 
-    if (type == "Standart") {
-      cost = cost * 1;
-    } else if (type == "Express") {
-      cost = cost * 1.5;
-    } else if (type == "Premium") {
-      cost = cost * 2;
+    switch (type) {
+      case "Standart":
+        cost = cost * 1;
+        break;
+      case "Express":
+        cost = cost * 1.5;
+        break;
+      case "Premium":
+        cost = cost * 1.5;
+        break;
+      default:
+        type = 0;
+        break;
     }
 
     if (cost <= 0) {
       alert("Некорректный вес посылки!");
+    } else if (type <= 0) {
+      alert("Некорректный тип доставки!");
     } else {
       alert(`Итоговая стоимость доставки ${cost}$`);
     }
