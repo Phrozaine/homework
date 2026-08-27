@@ -30,11 +30,15 @@ function getTimeOfDay(time) {
 console.log(getTimeOfDay(0));
 
 function findFirstEven(start, end) {
-  for (start = start; start < end; ) {
-    if (start % 2 == 0) {
-      return start;
-    } else start += 1;
+  if (start > end) {
+    return "Некорректный диапазон!";
+  } else {
+    for (start = start; start <= end; ) {
+      if (start % 2 == 0) {
+        return start;
+      } else start += 1;
+    }
+    return "Чётных чисел нет";
   }
-  return "Чётных чисел нет";
 }
 console.log(findFirstEven(9, 9));
